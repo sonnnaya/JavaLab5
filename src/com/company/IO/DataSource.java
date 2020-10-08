@@ -1,0 +1,29 @@
+package com.company.IO;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class DataSource {
+    public static String getString() throws IOException {
+        var inStream = new BufferedReader(new InputStreamReader(System.in));
+        return inStream.readLine();
+    }
+
+    public static int getSymbol() throws IOException {
+        var inStream = new InputStreamReader(System.in);
+        return inStream.read();
+    }
+
+    public static String getString(String message) throws IOException {
+        System.out.println(message);
+        var inStream = new BufferedReader(new InputStreamReader(System.in));
+        return inStream.readLine();
+    }
+
+    public static int getSymbol(String message) throws IOException {
+        System.out.println(message);
+        var inStream = new InputStreamReader(System.in);
+        return inStream.read();
+    }
+}
