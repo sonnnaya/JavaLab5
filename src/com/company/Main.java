@@ -15,14 +15,14 @@ public class Main {
             var path = DataSource.getString("Enter path directory:");
 
             // Task #1
-            var fileName = DataSource.getString("Enter file name:");
+            var fileName = DataSource.getString("\nTask #1\nEnter file name:");
             var fileHandler = new FileHandler(path, fileName);
 
             var maxWordString = StringHandler.getMaximumWordStrings(fileHandler.readRows());
             View.printMessageAndInstance(View.LINE_WITH_MAX_WORD_COUNT, maxWordString);
 
             // Task #3
-            var text = DataSource.getString("Enter text to encrypt:");
+            var text = DataSource.getString("\nTask #3\nEnter text to encrypt:");
 
             fileName = DataSource.getString("Enter file name:");
             fileHandler = new FileHandler(path, fileName);
@@ -35,7 +35,7 @@ public class Main {
             View.printMessageAndInstance(View.DECRYPTION_COMPLETED + fileName + ":\n", decrypted);
 
             // Task #4
-            fileName = DataSource.getString("Enter file name:");
+            fileName = DataSource.getString("\nTask #4\nEnter file name:");
             fileHandler = new FileHandler(path, fileName);
 
             text = fileHandler.readAll();
