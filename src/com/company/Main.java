@@ -3,56 +3,44 @@ package com.company;
 import com.company.IO.DataSource;
 import com.company.IO.FileHandler;
 import com.company.cryptography.Encryptor;
-import com.company.handlers.StringHandler;
-import com.company.handlers.TagCounter;
 
 import java.io.IOException;
+import java.util.Locale;
 
 public class Main {
 
     public static void main(String[] args) {
         try {
-            var path = DataSource.getString("Enter path directory:");
+            Locale.setDefault(new Locale("en", "GB"));
 
-            // Task #1
-            var fileName = DataSource.getString("\nTask #1\nEnter file name:");
-            var fileHandler = new FileHandler(path, fileName);
+            View.printMessage(View.LOCALE_MENU);
+            View.printMessage(View.getInputCommandDigit());
+            var command = DataSource.getDigit();
+            View.setBundler(chooseLocal(command));
 
-            var maxWordString = StringHandler.getMaximumWordStrings(fileHandler.readRows());
-            View.printMessageAndInstance(View.LINE_WITH_MAX_WORD_COUNT, maxWordString);
+            var text = DataSource.getString(View.getInputTextEncryption());
 
-            // Task #3
-            var text = DataSource.getString("\nTask #3\nEnter text to encrypt:");
+            var fileName = DataSource.getString(View.getInputFileName());
+            var fileHandler = new FileHandler("resources", fileName);
 
-            fileName = DataSource.getString("Enter file name:");
-            fileHandler = new FileHandler(path, fileName);
+            var keySymbol = DataSource.getSymbol(View.getInputKeySymbol());
 
-            var keySymbol = DataSource.getSymbol("Enter key symbol:");
             Encryptor.encrypt(fileHandler.getFile(), text, keySymbol);
-            View.printMessageAndInstance(text + View.ENCRYPTION_COMPLETED, fileName);
+            View.printMessageAndInstance(text + " " + View.getEncryptionCompleted(), fileName);
 
             var decrypted = Encryptor.decrypt(fileHandler.getFile(), keySymbol);
-            View.printMessageAndInstance(View.DECRYPTION_COMPLETED + fileName + ":\n", decrypted);
-
-            // Task #4
-            fileName = DataSource.getString("\nTask #4\nEnter file name:");
-            fileHandler = new FileHandler(path, fileName);
-
-            text = fileHandler.readAll();
-//        var tags = DataSource.getString("Enter tags:");
-            var tags = TagCounter.findAllHtmlTags(text);
-
-            var tagCounter = new TagCounter(tags);
-            var tagCountList = tagCounter.countTags(text);
-
-            TagCounter.sortByCount(tagCountList);
-            View.printMessageAndInstances(View.TAGS_AND_COUNTS, tagCountList);
-
-            TagCounter.sortByTag(tagCountList);
-            View.printMessageAndInstances(View.TAGS_AND_COUNTS, tagCountList);
+            View.printMessageAndInstance(View.getDecryptionCompleted() + fileName + ":\n", decrypted);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public static Locale chooseLocal(int digit) {
+        return switch (digit) {
+            case 1 -> new Locale("en", "GB");
+            case 2 -> new Locale("ua", "UA");
+            case 3 -> new Locale("ru", "RU");
+            default -> Locale.getDefault();
+        };
     }
 }

@@ -1,14 +1,22 @@
 package com.company.IO;
 
+import com.company.cryptography.Encryptor;
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import java.util.ArrayList;
 
 public class FileHandler {
     private final File file;
+    private static final Logger log = Logger.getLogger(FileHandler.class);
 
-    public FileHandler(String path, String name) throws IOException {
+    public FileHandler(String path, String name) {
         file = new File(path, name);
-        file.createNewFile();
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            log.error("Wrong directory.", e);
+        }
     }
 
     public File getFile() {

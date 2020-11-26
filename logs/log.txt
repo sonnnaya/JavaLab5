@@ -1,0 +1,40 @@
+2020-11-26 14:33:28,354 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for writing is s
+2020-11-26 14:33:28,354 [DEBUG] [main] [com.company.cryptography.Encryptor] - Source is hele
+2020-11-26 14:33:28,358 [DEBUG] [main] [com.company.cryptography.Encryptor] - Encryption-key is 107
+2020-11-26 14:33:28,359 [ INFO] [main] [com.company.cryptography.Encryptor] - Text was encrypted into s
+2020-11-26 14:33:28,364 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for reading is s
+2020-11-26 14:33:28,364 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decryption-key is 107
+2020-11-26 14:33:28,365 [ INFO] [main] [com.company.cryptography.Encryptor] - Text was decrypted from s
+2020-11-26 14:33:28,365 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decrypted text is hele
+2020-11-26 14:39:37,426 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for writing is task3.txt
+2020-11-26 14:39:37,426 [DEBUG] [main] [com.company.cryptography.Encryptor] - Source is миайум
+2020-11-26 14:39:37,430 [DEBUG] [main] [com.company.cryptography.Encryptor] - Encryption-key is 107
+2020-11-26 14:39:37,431 [ INFO] [main] [com.company.cryptography.Encryptor] - Text was encrypted into task3.txt
+2020-11-26 14:39:37,435 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for reading is task3.txt
+2020-11-26 14:39:37,436 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decryption-key is 107
+2020-11-26 14:39:37,437 [ INFO] [main] [com.company.cryptography.Encryptor] - Text was decrypted from task3.txt
+2020-11-26 14:39:37,437 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decrypted text is миайум
+2020-11-26 14:44:08,708 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for writing is d
+2020-11-26 14:44:08,709 [DEBUG] [main] [com.company.cryptography.Encryptor] - Source is dfvaf
+2020-11-26 14:44:08,714 [DEBUG] [main] [com.company.cryptography.Encryptor] - Encryption-key is 115
+2020-11-26 14:44:08,715 [INFO] [main] [com.company.cryptography.Encryptor] - Text was encrypted into d
+2020-11-26 14:44:08,720 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for reading is d
+2020-11-26 14:44:08,720 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decryption-key is 115
+2020-11-26 14:44:08,720 [INFO] [main] [com.company.cryptography.Encryptor] - Text was decrypted from d
+2020-11-26 14:44:08,721 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decrypted text is dfvaf
+2020-11-26 18:07:42,544 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for writing is task3.txt
+2020-11-26 18:07:42,646 [DEBUG] [main] [com.company.cryptography.Encryptor] - Source is hghg
+2020-11-26 18:07:42,651 [DEBUG] [main] [com.company.cryptography.Encryptor] - Encryption-key is 107
+2020-11-26 18:07:42,652 [INFO] [main] [com.company.cryptography.Encryptor] - Text was encrypted into task3.txt
+2020-11-26 18:07:42,657 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for reading is task3.txt
+2020-11-26 18:07:42,657 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decryption-key is 107
+2020-11-26 18:07:42,658 [INFO] [main] [com.company.cryptography.Encryptor] - Text was decrypted from task3.txt
+2020-11-26 18:07:42,659 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decrypted text is hghg
+2020-11-26 18:14:12,119 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for writing is task3.txt
+2020-11-26 18:14:12,119 [DEBUG] [main] [com.company.cryptography.Encryptor] - Source is nice
+2020-11-26 18:14:12,125 [DEBUG] [main] [com.company.cryptography.Encryptor] - Encryption-key is 107
+2020-11-26 18:14:12,128 [INFO] [main] [com.company.cryptography.Encryptor] - Text was encrypted into task3.txt
+2020-11-26 18:14:12,136 [DEBUG] [main] [com.company.cryptography.Encryptor] - File's name for reading is task3.txt
+2020-11-26 18:14:12,137 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decryption-key is 107
+2020-11-26 18:14:12,138 [INFO] [main] [com.company.cryptography.Encryptor] - Text was decrypted from task3.txt
+2020-11-26 18:14:12,138 [DEBUG] [main] [com.company.cryptography.Encryptor] - Decrypted text is nice
